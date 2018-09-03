@@ -31,7 +31,7 @@ Then go to [http://127.0.0.1:3000](http://127.0.0.1:3000)
 ___
 
 
-## A research project run by yingshaoxo to explore possibility of detecting data from webcam.
+## A research project run by yingshaoxo to explore the possibility of detecting data from webcam.
 
 ### feature list:
 
