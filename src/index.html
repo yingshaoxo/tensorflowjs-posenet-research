@@ -1,0 +1,71 @@
+<html> 
+<head>
+
+<style>
+    .center {
+        text-align: center;
+        margin: auto;
+        width: 50%;
+    }
+
+    .text {
+        text-align: center;
+        margin: auto;
+    }
+
+    .small_picture {
+        text-align: center;
+        margin: auto;
+        width: 20vw;
+        height: 20vw;
+    }
+</style>
+
+</head>
+
+<body>
+
+    <div class="text">
+        <textarea hidden class="text" id="url_box" placeholder="Input your video URL" rows="1" style="width:25%;border:none"></textarea>
+        <br/>
+
+        <button hidden class="text" type="button" id="debug_button">Pause</button>
+
+        <p class="text" id="gender"></p>
+        <p class="text" id="age"></p>
+        <p class="text" id="same_person"></p>
+
+        <p class="text" id="head_left_or_right"></p>
+        <p class="text" id="head_up_or_down"></p>
+        <p class="text" id="sitting_or_standing"></p>
+        <p class="text" id="motion"></p>
+
+        <p class="text" id="people_passby"></p>
+
+        <p class="text" id="are_they_looking"></p>
+    </div>
+
+    <div class="center">
+        <video autoplay playsinline muted id="webcam" style=" -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        display: none;
+        "></video>
+        <canvas class="center" id="overlay" />
+    </div>
+
+
+    <br/>
+
+
+    <div class="text">
+        <p class="text" id="object"></p>
+    </div>
+
+    <div class="small_picture">
+        <canvas class="small_picture" id="hands" />
+    </div>
+
+</body>
+</html>
